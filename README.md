@@ -1,4 +1,4 @@
 # WordSearch
 PHP Word Web Application (webpage).
-Required a db table 'entries' > fields : 'word', 'wordtype' & 'definition'.
-(sorry for not including the same)
+Required a db 'entries' > table 'entries' > fields : 'word', 'wordtype' & 'definition'.
+(included: file.sql)
