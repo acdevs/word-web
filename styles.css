@@ -1,0 +1,125 @@
+::selection{
+    background-color: #fff;
+    color:#000;
+}
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    margin:200px 50px 0px 50px;
+    background-color: #090909;
+}
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:200px;
+    background-color: #1f1f1f;
+    box-shadow: 0px 2px 5px #050505;
+    color:#eee;
+}
+input{
+    position: relative;
+    font-size: 30px;
+    outline: none;
+    border:none;
+    padding:0 50px 0 25px;
+    background-color: #1f1f1f;
+    width:calc(100% - 70px);
+    height: 60px;
+    margin:20px;
+    margin-left: calc(35px - 50% );
+    left:50%;
+    font-weight: bolder;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 50px;
+    border:4px solid #a5a5a5;
+    color:#bababa;
+    transition: 0.1s;
+
+}
+input::-webkit-search-cancel-button{
+    display: none;
+}
+button{
+    position: relative;
+    box-sizing: border-box;
+    font-size: 30px;
+    outline: none;
+    border:none;
+    padding:5px;
+    background-color: transparent;
+    z-index: 2;
+    margin:27.5px;
+    margin-right:50px;
+    float:right;
+    border-radius: 50px;
+}
+.comp{
+    position: relative;
+    width:calc(100% - 50px);
+    height: 60px;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-top: 30px;
+    padding: none;
+    font-size:50px;
+    font-weight: bold;
+}
+
+.tablewrap{
+    width: 100%;
+}
+table{
+    box-sizing: border-box;
+    width: 100%;
+    border: 0px solid #111;
+    font-size: 20px;
+    color: #ababab;
+    margin-bottom:50px;
+}
+.wordName{
+    width: inherit;
+    font-size: 50px;
+    font-weight:bold;
+    padding:10px;
+    border-bottom: 4px dotted #ababab;
+    color: #ababab;
+}
+tr{
+    box-sizing: border-box;
+    margin:0px;
+}
+
+th{
+    font-size:30px;
+}
+th,td{
+    box-sizing: border-box;
+    text-align: left;
+    padding:10px;
+}
+td{
+    padding:10px 30px;
+}
+tr td:nth-of-type(1){
+    text-align: center;
+    border-top-left-radius:50px;
+    border-bottom-left-radius:50px;
+}
+tr td:nth-of-type(2){
+    border-top-right-radius:50px;
+    border-bottom-right-radius:50px;
+}
+td[colspan='2']{
+    font-size: 25px;
+}
+
+tr:nth-child(even) {
+    background-color: #292929;
+}
+
+.fa-search{
+    color:#bababa;
+}
