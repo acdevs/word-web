@@ -33,7 +33,7 @@
         //html
         echo "<div class='header'>
             <div class='comp'>
-                <b>Word Web</b></div>
+                <b>Word <span class='highlight'> Web </span></b></div>
             <div class='search'>
                 <form method='POST' action='index.php'>
                     <input type='search' name='searchedWord' placeholder='Search' autofocus onchange='checkInput(this)'>
@@ -60,13 +60,16 @@
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
-              echo "<div class='wordName'>".$word."</div>";
-              echo "<tr><th width='10%'>Speech</th><th >Definitions</th></tr>";
+              echo "<div class='wordName'>".$word."</div>
+                    <tr><th width='10%'>Speech</th><th >Definitions</th></tr>";
               while($row = $result->fetch_assoc()) {
                 echo "<tr><td>" . $row["wordtype"]. "</td><td>" . $row["definition"]. "</td></tr>";
               }
             } else {
-              echo "<tr><td width='20%' colspan='2'>Oops! '".$word."' not found.</td></tr>";
+              echo "<div class='wordName'>Uh oh!</div>
+                    <tr><th width='10%'>Speech</th><th >Definitions</th></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>";
             }
         }
         //html
