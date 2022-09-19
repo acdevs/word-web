@@ -32,11 +32,12 @@
         
         //html
         echo "<div class='header'>
-            <div class='comp'>
-                <b>Word <span class='highlight'> Web </span></b></div>
+            <div class='title'>
+                <b>Word <span class='highlight'> Web </span></b>
+            </div>
             <div class='search'>
                 <form method='POST' action='index.php'>
-                    <input type='search' name='searchedWord' placeholder='Search' autofocus onchange='checkInput(this)'>
+                    <input type='search' name='searchedWord' placeholder='Search' autocomplete='off' autofocus onchange='checkInput(this)'>
                     <button type='submit' id='btn' disabled>
                         <i class='fa fa-search'></i>
                     </button>
@@ -66,7 +67,7 @@
                 echo "<tr><td>" . $row["wordtype"]. "</td><td>" . $row["definition"]. "</td></tr>";
               }
             } else {
-              echo "<div class='wordName'>Uh oh!</div>
+              echo "<div class='wordName'>uh oh!</div>
                     <tr><th width='10%'>Speech</th><th >Definitions</th></tr>
                     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
                     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>";
